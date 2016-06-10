@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE016A7E1D08791300C613B5 /* MainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE016A7D1D08791300C613B5 /* MainScreenViewController.m */; };
+		CE016A831D087A1600C613B5 /* MainScreenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE016A821D087A1600C613B5 /* MainScreenTableViewCell.m */; };
+		CE016A861D087A5E00C613B5 /* MainScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE016A851D087A5E00C613B5 /* MainScreenTableViewCell.xib */; };
+		CE016A951D09E5F600C613B5 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE016A941D09E5F600C613B5 /* CoreDataManager.m */; };
+		CE016AA51D0A170700C613B5 /* AddNewCurrenciesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE016AA41D0A170700C613B5 /* AddNewCurrenciesViewController.m */; };
+		CE016ABB1D0A1CA000C613B5 /* SimpleConverter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE016AB91D0A1CA000C613B5 /* SimpleConverter.xcdatamodeld */; };
+		CE016AC61D0A1D3F00C613B5 /* Currency+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CE016AC31D0A1D3F00C613B5 /* Currency+CoreDataProperties.m */; };
+		CE016AC71D0A1D3F00C613B5 /* Currency.m in Sources */ = {isa = PBXBuildFile; fileRef = CE016AC51D0A1D3F00C613B5 /* Currency.m */; };
+		CE5A4BC31D0A43FA0076C5DA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A4BC21D0A43FA0076C5DA /* Reachability.m */; };
 		CE7442E51D07538D003C20CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7442E41D07538D003C20CC /* main.m */; };
 		CE7442E81D07538D003C20CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7442E71D07538D003C20CC /* AppDelegate.m */; };
-		CE7442EB1D07538D003C20CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7442EA1D07538D003C20CC /* ViewController.m */; };
 		CE7442EE1D07538D003C20CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7442EC1D07538D003C20CC /* Main.storyboard */; };
-		CE7442F11D07538D003C20CC /* SimpleConverter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE7442EF1D07538D003C20CC /* SimpleConverter.xcdatamodeld */; };
 		CE7442F31D07538D003C20CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7442F21D07538D003C20CC /* Assets.xcassets */; };
 		CE7442F61D07538D003C20CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7442F41D07538D003C20CC /* LaunchScreen.storyboard */; };
 		CE7443011D07538D003C20CC /* SimpleConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7443001D07538D003C20CC /* SimpleConverterTests.m */; };
 		CE74430C1D07538D003C20CC /* SimpleConverterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE74430B1D07538D003C20CC /* SimpleConverterUITests.m */; };
+		CE7443251D075FE1003C20CC /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7443241D075FE1003C20CC /* XMLParser.m */; };
+		CE74437D1D07823F003C20CC /* Facade.m in Sources */ = {isa = PBXBuildFile; fileRef = CE74437C1D07823F003C20CC /* Facade.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +45,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE016A7C1D08791300C613B5 /* MainScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScreenViewController.h; path = ViewControllers/MainScreenViewController/MainScreenViewController.h; sourceTree = "<group>"; };
+		CE016A7D1D08791300C613B5 /* MainScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScreenViewController.m; path = ViewControllers/MainScreenViewController/MainScreenViewController.m; sourceTree = "<group>"; };
+		CE016A811D087A1600C613B5 /* MainScreenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScreenTableViewCell.h; path = Models/MainScreenTableViewCell/MainScreenTableViewCell.h; sourceTree = "<group>"; };
+		CE016A821D087A1600C613B5 /* MainScreenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScreenTableViewCell.m; path = Models/MainScreenTableViewCell/MainScreenTableViewCell.m; sourceTree = "<group>"; };
+		CE016A851D087A5E00C613B5 /* MainScreenTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainScreenTableViewCell.xib; path = Recources/Xibs/MainScreenTableViewCell.xib; sourceTree = "<group>"; };
+		CE016A931D09E5F600C613B5 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataManager.h; path = Models/CoreDataManager/CoreDataManager.h; sourceTree = "<group>"; };
+		CE016A941D09E5F600C613B5 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataManager.m; path = Models/CoreDataManager/CoreDataManager.m; sourceTree = "<group>"; };
+		CE016AA31D0A170700C613B5 /* AddNewCurrenciesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddNewCurrenciesViewController.h; path = ViewControllers/AddNewCurrenciesViewController/AddNewCurrenciesViewController.h; sourceTree = "<group>"; };
+		CE016AA41D0A170700C613B5 /* AddNewCurrenciesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddNewCurrenciesViewController.m; path = ViewControllers/AddNewCurrenciesViewController/AddNewCurrenciesViewController.m; sourceTree = "<group>"; };
+		CE016ABA1D0A1CA000C613B5 /* SimpleConverter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleConverter.xcdatamodel; sourceTree = "<group>"; };
+		CE016AC21D0A1D3F00C613B5 /* Currency+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Currency+CoreDataProperties.h"; path = "SimpleConverter/Models/CoreDataClasses/Currency+CoreDataProperties.h"; sourceTree = "<group>"; };
+		CE016AC31D0A1D3F00C613B5 /* Currency+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Currency+CoreDataProperties.m"; path = "SimpleConverter/Models/CoreDataClasses/Currency+CoreDataProperties.m"; sourceTree = "<group>"; };
+		CE016AC41D0A1D3F00C613B5 /* Currency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Currency.h; path = SimpleConverter/Models/CoreDataClasses/Currency.h; sourceTree = "<group>"; };
+		CE016AC51D0A1D3F00C613B5 /* Currency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Currency.m; path = SimpleConverter/Models/CoreDataClasses/Currency.m; sourceTree = "<group>"; };
+		CE5A4BC11D0A43FA0076C5DA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Models/Reachability/Reachability.h; sourceTree = "<group>"; };
+		CE5A4BC21D0A43FA0076C5DA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Models/Reachability/Reachability.m; sourceTree = "<group>"; };
 		CE7442E01D07538D003C20CC /* SimpleConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7442E41D07538D003C20CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE7442E61D07538D003C20CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE7442E71D07538D003C20CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE7442E91D07538D003C20CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CE7442EA1D07538D003C20CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE7442ED1D07538D003C20CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE7442F01D07538D003C20CC /* SimpleConverter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleConverter.xcdatamodel; sourceTree = "<group>"; };
 		CE7442F21D07538D003C20CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE7442F51D07538D003C20CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE7442F71D07538D003C20CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +75,10 @@
 		CE7443071D07538D003C20CC /* SimpleConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE74430B1D07538D003C20CC /* SimpleConverterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleConverterUITests.m; sourceTree = "<group>"; };
 		CE74430D1D07538E003C20CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7443231D075FE1003C20CC /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParser.h; path = Models/XMLParser/XMLParser.h; sourceTree = "<group>"; };
+		CE7443241D075FE1003C20CC /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParser.m; path = Models/XMLParser/XMLParser.m; sourceTree = "<group>"; };
+		CE74437B1D07823F003C20CC /* Facade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Facade.h; path = Models/Facade/Facade.h; sourceTree = "<group>"; };
+		CE74437C1D07823F003C20CC /* Facade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Facade.m; path = Models/Facade/Facade.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +106,107 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE016A7F1D08791A00C613B5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE016AA61D0A171100C613B5 /* AddNewCurrenciesViewController */,
+				CE016A801D08792200C613B5 /* MainScreenViewController */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE016A801D08792200C613B5 /* MainScreenViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE016A7C1D08791300C613B5 /* MainScreenViewController.h */,
+				CE016A7D1D08791300C613B5 /* MainScreenViewController.m */,
+			);
+			name = MainScreenViewController;
+			sourceTree = "<group>";
+		};
+		CE016A841D087A1C00C613B5 /* MainScreenTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE016A811D087A1600C613B5 /* MainScreenTableViewCell.h */,
+				CE016A821D087A1600C613B5 /* MainScreenTableViewCell.m */,
+			);
+			name = MainScreenTableViewCell;
+			sourceTree = "<group>";
+		};
+		CE016A871D087A6500C613B5 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				CE016A851D087A5E00C613B5 /* MainScreenTableViewCell.xib */,
+			);
+			name = Xibs;
+			sourceTree = "<group>";
+		};
+		CE016A881D087A6800C613B5 /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				CE016A871D087A6500C613B5 /* Xibs */,
+				CE7442E61D07538D003C20CC /* AppDelegate.h */,
+				CE7442E71D07538D003C20CC /* AppDelegate.m */,
+				CE7442F71D07538D003C20CC /* Info.plist */,
+				CE7442F21D07538D003C20CC /* Assets.xcassets */,
+				CE7442EC1D07538D003C20CC /* Main.storyboard */,
+				CE7442F41D07538D003C20CC /* LaunchScreen.storyboard */,
+				CE016AB91D0A1CA000C613B5 /* SimpleConverter.xcdatamodeld */,
+			);
+			name = Recources;
+			sourceTree = "<group>";
+		};
+		CE016A921D09E56A00C613B5 /* CoreDataClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CoreDataClasses;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CE016A961D09E5F900C613B5 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE016A931D09E5F600C613B5 /* CoreDataManager.h */,
+				CE016A941D09E5F600C613B5 /* CoreDataManager.m */,
+			);
+			name = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		CE016AA61D0A171100C613B5 /* AddNewCurrenciesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE016AA31D0A170700C613B5 /* AddNewCurrenciesViewController.h */,
+				CE016AA41D0A170700C613B5 /* AddNewCurrenciesViewController.m */,
+			);
+			name = AddNewCurrenciesViewController;
+			sourceTree = "<group>";
+		};
+		CE0BD91C1D07853C00998185 /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				CE74437B1D07823F003C20CC /* Facade.h */,
+				CE74437C1D07823F003C20CC /* Facade.m */,
+			);
+			name = Facade;
+			sourceTree = "<group>";
+		};
+		CE5A4BC41D0A43FF0076C5DA /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A4BC11D0A43FA0076C5DA /* Reachability.h */,
+				CE5A4BC21D0A43FA0076C5DA /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
 		CE7442D71D07538D003C20CC = {
 			isa = PBXGroup;
 			children = (
+				CE016AC21D0A1D3F00C613B5 /* Currency+CoreDataProperties.h */,
+				CE016AC31D0A1D3F00C613B5 /* Currency+CoreDataProperties.m */,
+				CE016AC41D0A1D3F00C613B5 /* Currency.h */,
+				CE016AC51D0A1D3F00C613B5 /* Currency.m */,
 				CE7442E21D07538D003C20CC /* SimpleConverter */,
 				CE7442FF1D07538D003C20CC /* SimpleConverterTests */,
 				CE74430A1D07538D003C20CC /* SimpleConverterUITests */,
@@ -103,15 +227,9 @@
 		CE7442E21D07538D003C20CC /* SimpleConverter */ = {
 			isa = PBXGroup;
 			children = (
-				CE7442E61D07538D003C20CC /* AppDelegate.h */,
-				CE7442E71D07538D003C20CC /* AppDelegate.m */,
-				CE7442E91D07538D003C20CC /* ViewController.h */,
-				CE7442EA1D07538D003C20CC /* ViewController.m */,
-				CE7442EC1D07538D003C20CC /* Main.storyboard */,
-				CE7442F21D07538D003C20CC /* Assets.xcassets */,
-				CE7442F41D07538D003C20CC /* LaunchScreen.storyboard */,
-				CE7442F71D07538D003C20CC /* Info.plist */,
-				CE7442EF1D07538D003C20CC /* SimpleConverter.xcdatamodeld */,
+				CE7443261D075FE7003C20CC /* Models */,
+				CE016A7F1D08791A00C613B5 /* ViewControllers */,
+				CE016A881D087A6800C613B5 /* Recources */,
 				CE7442E31D07538D003C20CC /* Supporting Files */,
 			);
 			path = SimpleConverter;
@@ -141,6 +259,28 @@
 				CE74430D1D07538E003C20CC /* Info.plist */,
 			);
 			path = SimpleConverterUITests;
+			sourceTree = "<group>";
+		};
+		CE7443261D075FE7003C20CC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE5A4BC41D0A43FF0076C5DA /* Reachability */,
+				CE016A961D09E5F900C613B5 /* CoreDataManager */,
+				CE016A921D09E56A00C613B5 /* CoreDataClasses */,
+				CE7443271D075FEF003C20CC /* XMLParser */,
+				CE0BD91C1D07853C00998185 /* Facade */,
+				CE016A841D087A1C00C613B5 /* MainScreenTableViewCell */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CE7443271D075FEF003C20CC /* XMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				CE7443231D075FE1003C20CC /* XMLParser.h */,
+				CE7443241D075FE1003C20CC /* XMLParser.m */,
+			);
+			name = XMLParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE016A861D087A5E00C613B5 /* MainScreenTableViewCell.xib in Resources */,
 				CE7442F61D07538D003C20CC /* LaunchScreen.storyboard in Resources */,
 				CE7442F31D07538D003C20CC /* Assets.xcassets in Resources */,
 				CE7442EE1D07538D003C20CC /* Main.storyboard in Resources */,
@@ -273,10 +414,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE7442EB1D07538D003C20CC /* ViewController.m in Sources */,
+				CE016AA51D0A170700C613B5 /* AddNewCurrenciesViewController.m in Sources */,
 				CE7442E81D07538D003C20CC /* AppDelegate.m in Sources */,
-				CE7442F11D07538D003C20CC /* SimpleConverter.xcdatamodeld in Sources */,
+				CE016ABB1D0A1CA000C613B5 /* SimpleConverter.xcdatamodeld in Sources */,
+				CE016AC71D0A1D3F00C613B5 /* Currency.m in Sources */,
+				CE016A951D09E5F600C613B5 /* CoreDataManager.m in Sources */,
+				CE016AC61D0A1D3F00C613B5 /* Currency+CoreDataProperties.m in Sources */,
 				CE7442E51D07538D003C20CC /* main.m in Sources */,
+				CE016A7E1D08791300C613B5 /* MainScreenViewController.m in Sources */,
+				CE016A831D087A1600C613B5 /* MainScreenTableViewCell.m in Sources */,
+				CE74437D1D07823F003C20CC /* Facade.m in Sources */,
+				CE5A4BC31D0A43FA0076C5DA /* Reachability.m in Sources */,
+				CE7443251D075FE1003C20CC /* XMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +567,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleConverter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OS.SimpleConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,6 +579,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleConverter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OS.SimpleConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -502,6 +653,7 @@
 				CE7443121D07538E003C20CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE7443131D07538E003C20CC /* Build configuration list for PBXNativeTarget "SimpleConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +662,7 @@
 				CE7443151D07538E003C20CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE7443161D07538E003C20CC /* Build configuration list for PBXNativeTarget "SimpleConverterUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,17 +671,19 @@
 				CE7443181D07538E003C20CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CE7442EF1D07538D003C20CC /* SimpleConverter.xcdatamodeld */ = {
+		CE016AB91D0A1CA000C613B5 /* SimpleConverter.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CE7442F01D07538D003C20CC /* SimpleConverter.xcdatamodel */,
+				CE016ABA1D0A1CA000C613B5 /* SimpleConverter.xcdatamodel */,
 			);
-			currentVersion = CE7442F01D07538D003C20CC /* SimpleConverter.xcdatamodel */;
-			path = SimpleConverter.xcdatamodeld;
+			currentVersion = CE016ABA1D0A1CA000C613B5 /* SimpleConverter.xcdatamodel */;
+			name = SimpleConverter.xcdatamodeld;
+			path = Recources/SimpleConverter.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
