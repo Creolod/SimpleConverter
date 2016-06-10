@@ -15,9 +15,7 @@
 }
 
 -(void)updateConvertRates{
-    
     [Facade saveCurrencyWithName:@"EUR" rate:1];
-    
     NSURL * urlWithCurrencyRates = [NSURL URLWithString:@"http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml"];
     xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:urlWithCurrencyRates];
     [xmlParser setDelegate:self];
@@ -30,8 +28,13 @@
     if ([elementName isEqualToString:@"Cube"]) {
         NSString * currencyName = attributeDict[@"currency"];
         float rate = [attributeDict[@"rate"] floatValue];
+        NSString * updateDate = attributeDict[@"time"];
         if (currencyName && rate) {
             [Facade saveCurrencyWithName:currencyName rate:rate];
+        } else if (updateDate){
+            NSUserDefaults * userDefaults = [NSUserDefaults standardUserDefaults];
+            [userDefaults setObject:updateDate forKey:@"SumpleConverterLastUpdate"];
+            [userDefaults synchronize];
         }
     }
 }

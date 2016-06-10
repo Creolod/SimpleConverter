@@ -35,13 +35,15 @@
     return self;
 }
 
-#pragma mark - XMLParser;
+#pragma mark - XMLParser
 
 +(void)updateConvertRates{
-    [[[XMLParser alloc] init] updateConvertRates];
+    if ([[self sharedManager] getInternetStatus]) {
+        [[[XMLParser alloc] init] updateConvertRates];
+    }
 }
 
-#pragma mark - Core Data Manager
+#pragma mark - Core Data Manager;
 
 +(void)saveCurrencyWithName:(NSString*)name rate:(float)rate{
     NSArray * currenciesArray = [CoreDataManager fetchThisEntity:@"Currency" key:@"name" value:name];
@@ -76,6 +78,8 @@
 +(Currency*)getCurrencyWithName:(NSString*)name{
     return [CoreDataManager fetchThisEntity:@"Currency" key:@"name" value:name][0];
 }
+
+#pragma mark - Internet Reachability
 
 -(BOOL)getInternetStatus{
     networkStatus = [reachability currentReachabilityStatus];

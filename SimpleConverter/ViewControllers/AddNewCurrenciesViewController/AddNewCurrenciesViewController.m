@@ -37,6 +37,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TableViewCell" forIndexPath:indexPath];
     Currency * currency = convertRates[indexPath.row];
     cell.textLabel.text = currency.name;
+    cell.detailTextLabel.text = NSLocalizedString(currency.name, nil);
     return cell;
 }
 

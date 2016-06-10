@@ -1,0 +1,15 @@
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "9sq-Iz-9xu"; */
+"9sq-Iz-9xu.title" = "Назад";
+
+/* Class = "UIViewController"; title = "Currency Converter"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Конвертер Валют";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "LHS-X1-mER"; */
+"LHS-X1-mER.title" = "Назад";
+
+/* Class = "UINavigationItem"; title = "Simple Converter"; ObjectID = "fnA-9o-BDh"; */
+"fnA-9o-BDh.title" = "Конвертер Валют";
+
+/* Class = "UINavigationItem"; title = "Add Currency"; ObjectID = "wsb-47-bg3"; */
+"wsb-47-bg3.title" = "Добавить Валюту";

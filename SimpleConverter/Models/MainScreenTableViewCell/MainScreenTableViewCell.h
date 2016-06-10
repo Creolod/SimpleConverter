@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomTextFieldForCell.h"
 
 @interface MainScreenTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *currencyLabel;
-@property (weak, nonatomic) IBOutlet UITextField *sumTextField;
+@property (weak, nonatomic) IBOutlet CustomTextFieldForCell *sumTextField;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 @end

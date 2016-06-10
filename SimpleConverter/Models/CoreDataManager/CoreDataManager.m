@@ -1,9 +1,9 @@
 //
 //  CoreDataManager.m
-//  testRss
+//  SimpleConverter
 //
 //  Created by Станислав on 13.05.16.
-//  Copyright © 2016 test. All rights reserved.
+//  Copyright © 2016 User. All rights reserved.
 //
 
 #import "CoreDataManager.h"

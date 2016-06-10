@@ -25,6 +25,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     sum = 0;
+    [self.navigationController.view setBackgroundColor:[UIColor colorWithRed:76.0/255.0 green:217.0/255.0 blue:100.0/255.0 alpha:1]];
+    
+    UIWindow* currentWindow = [UIApplication sharedApplication].keyWindow;
+    [currentWindow addSubview:self.darkView];
+    [currentWindow bringSubviewToFront:self.darkView];
+    [self.navigationController.view addSubview:self.darkView];
     [self addObservers];
     [self addRefreshControl];
 }
@@ -92,6 +98,20 @@
 
 #pragma mark - Table View Delegate Methods
 
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
+    UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
+    
+    header.textLabel.textColor = [UIColor blackColor];
+    header.textLabel.font = [UIFont boldSystemFontOfSize:12];
+    CGRect headerFrame = header.frame;
+    header.textLabel.frame = headerFrame;
+    header.textLabel.textAlignment = NSTextAlignmentCenter;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"Last update: ", nil), [[NSUserDefaults standardUserDefaults] objectForKey:@"SumpleConverterLastUpdate"]];
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return convertRates.count;
 }
@@ -100,6 +120,7 @@
     MainScreenTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MainScreenTableViewCell" forIndexPath:indexPath];
     Currency * currency = convertRates[indexPath.row];
     cell.currencyLabel.text = currency.name;
+    cell.descriptionLabel.text = NSLocalizedString(currency.name, nil);
     [cell.sumTextField addTarget:self action:@selector(sumTextFieldChangeAction:) forControlEvents:UIControlEventEditingChanged];
     [cell.sumTextField addTarget:self action:@selector(sumTextFieldBeginAction:) forControlEvents:UIControlEventEditingDidBegin];
     [cell.sumTextField addTarget:self action:@selector(sumTextFieldEndAction:) forControlEvents:UIControlEventEditingDidEnd];
@@ -113,7 +134,8 @@
 
 -(void)sumTextFieldBeginAction:(UITextField*)sumTextField{
     MainScreenTableViewCell * cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForItem:sumTextField.tag inSection:0]];
-    cell.backgroundColor = [UIColor colorWithRed:76.0/255.0 green:217.0/255.0 blue:100.0/255.0 alpha:1];
+    cell.backgroundColor = [UIColor colorWithRed:0 green:122.0/255.0 blue:255.0/255.0 alpha:0.5];
+    sumTextField.text = @"0";
     [self.tableView beginUpdates];
     [self.tableView endUpdates];
 }
@@ -127,13 +149,21 @@
 
 -(void)sumTextFieldChangeAction:(UITextField*)sumTextField{
     Currency * currency = convertRates[sumTextField.tag];
-    if (sumTextField.text.floatValue>0) {
-        sum = sumTextField.text.floatValue / currency.rate.floatValue;
-        for (int i = 0; i<convertRates.count; i++){
-            if (i != sumTextField.tag)
-                [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:i inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
+    if ([sumTextField.text length] > 0) {
+        if ([sumTextField.text hasPrefix:@"0"]) {
+            sumTextField.text = [sumTextField.text substringFromIndex:1];
         }
+        if (sumTextField.text.floatValue>0) {
+            sum = sumTextField.text.floatValue / currency.rate.floatValue;
+            for (int i = 0; i<convertRates.count; i++){
+                if (i != sumTextField.tag)
+                    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:i inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
+            }
+        }
+    } else {
+        sumTextField.text = @"0";
     }
+    
     
 }
 

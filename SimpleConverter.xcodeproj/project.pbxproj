@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8505A79C1D0AEE14003A6886 /* CustomTextFieldForCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8505A79B1D0AEE14003A6886 /* CustomTextFieldForCell.m */; };
+		85072E761D0AC2B1004D2C9C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85072E781D0AC2B1004D2C9C /* Localizable.strings */; };
 		CE016A7E1D08791300C613B5 /* MainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE016A7D1D08791300C613B5 /* MainScreenViewController.m */; };
 		CE016A831D087A1600C613B5 /* MainScreenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE016A821D087A1600C613B5 /* MainScreenTableViewCell.m */; };
 		CE016A861D087A5E00C613B5 /* MainScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE016A851D087A5E00C613B5 /* MainScreenTableViewCell.xib */; };
@@ -45,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8505A79A1D0AEE14003A6886 /* CustomTextFieldForCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTextFieldForCell.h; path = Models/MainScreenTableViewCell/CustomTextFieldForCell.h; sourceTree = "<group>"; };
+		8505A79B1D0AEE14003A6886 /* CustomTextFieldForCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTextFieldForCell.m; path = Models/MainScreenTableViewCell/CustomTextFieldForCell.m; sourceTree = "<group>"; };
+		85072E721D0ABA94004D2C9C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		85072E731D0ABA94004D2C9C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		85072E771D0AC2B1004D2C9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		85072E791D0AC2BD004D2C9C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		85072E7B1D0ACB2A004D2C9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		CE016A7C1D08791300C613B5 /* MainScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScreenViewController.h; path = ViewControllers/MainScreenViewController/MainScreenViewController.h; sourceTree = "<group>"; };
 		CE016A7D1D08791300C613B5 /* MainScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainScreenViewController.m; path = ViewControllers/MainScreenViewController/MainScreenViewController.m; sourceTree = "<group>"; };
 		CE016A811D087A1600C613B5 /* MainScreenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainScreenTableViewCell.h; path = Models/MainScreenTableViewCell/MainScreenTableViewCell.h; sourceTree = "<group>"; };
@@ -127,6 +136,8 @@
 		CE016A841D087A1C00C613B5 /* MainScreenTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				8505A79A1D0AEE14003A6886 /* CustomTextFieldForCell.h */,
+				8505A79B1D0AEE14003A6886 /* CustomTextFieldForCell.m */,
 				CE016A811D087A1600C613B5 /* MainScreenTableViewCell.h */,
 				CE016A821D087A1600C613B5 /* MainScreenTableViewCell.m */,
 			);
@@ -152,6 +163,7 @@
 				CE7442EC1D07538D003C20CC /* Main.storyboard */,
 				CE7442F41D07538D003C20CC /* LaunchScreen.storyboard */,
 				CE016AB91D0A1CA000C613B5 /* SimpleConverter.xcdatamodeld */,
+				85072E781D0AC2B1004D2C9C /* Localizable.strings */,
 			);
 			name = Recources;
 			sourceTree = "<group>";
@@ -159,6 +171,10 @@
 		CE016A921D09E56A00C613B5 /* CoreDataClasses */ = {
 			isa = PBXGroup;
 			children = (
+				CE016AC21D0A1D3F00C613B5 /* Currency+CoreDataProperties.h */,
+				CE016AC31D0A1D3F00C613B5 /* Currency+CoreDataProperties.m */,
+				CE016AC41D0A1D3F00C613B5 /* Currency.h */,
+				CE016AC51D0A1D3F00C613B5 /* Currency.m */,
 			);
 			name = CoreDataClasses;
 			path = ..;
@@ -203,10 +219,6 @@
 		CE7442D71D07538D003C20CC = {
 			isa = PBXGroup;
 			children = (
-				CE016AC21D0A1D3F00C613B5 /* Currency+CoreDataProperties.h */,
-				CE016AC31D0A1D3F00C613B5 /* Currency+CoreDataProperties.m */,
-				CE016AC41D0A1D3F00C613B5 /* Currency.h */,
-				CE016AC51D0A1D3F00C613B5 /* Currency.m */,
 				CE7442E21D07538D003C20CC /* SimpleConverter */,
 				CE7442FF1D07538D003C20CC /* SimpleConverterTests */,
 				CE74430A1D07538D003C20CC /* SimpleConverterUITests */,
@@ -350,6 +362,7 @@
 				TargetAttributes = {
 					CE7442DF1D07538D003C20CC = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = RDY8LLF99L;
 					};
 					CE7442FB1D07538D003C20CC = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -368,6 +381,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = CE7442D71D07538D003C20CC;
 			productRefGroup = CE7442E11D07538D003C20CC /* Products */;
@@ -386,6 +400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85072E761D0AC2B1004D2C9C /* Localizable.strings in Resources */,
 				CE016A861D087A5E00C613B5 /* MainScreenTableViewCell.xib in Resources */,
 				CE7442F61D07538D003C20CC /* LaunchScreen.storyboard in Resources */,
 				CE7442F31D07538D003C20CC /* Assets.xcassets in Resources */,
@@ -420,6 +435,7 @@
 				CE016AC71D0A1D3F00C613B5 /* Currency.m in Sources */,
 				CE016A951D09E5F600C613B5 /* CoreDataManager.m in Sources */,
 				CE016AC61D0A1D3F00C613B5 /* Currency+CoreDataProperties.m in Sources */,
+				8505A79C1D0AEE14003A6886 /* CustomTextFieldForCell.m in Sources */,
 				CE7442E51D07538D003C20CC /* main.m in Sources */,
 				CE016A7E1D08791300C613B5 /* MainScreenViewController.m in Sources */,
 				CE016A831D087A1600C613B5 /* MainScreenTableViewCell.m in Sources */,
@@ -461,10 +477,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		85072E781D0AC2B1004D2C9C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85072E771D0AC2B1004D2C9C /* Base */,
+				85072E791D0AC2BD004D2C9C /* ru */,
+			);
+			name = Localizable.strings;
+			path = Recources;
+			sourceTree = "<group>";
+		};
 		CE7442EC1D07538D003C20CC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CE7442ED1D07538D003C20CC /* Base */,
+				85072E721D0ABA94004D2C9C /* ru */,
+				85072E7B1D0ACB2A004D2C9C /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -473,6 +501,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE7442F51D07538D003C20CC /* Base */,
+				85072E731D0ABA94004D2C9C /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -566,11 +595,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SimpleConverter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OS.SimpleConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -578,11 +609,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SimpleConverter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OS.SimpleConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

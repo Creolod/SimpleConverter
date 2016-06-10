@@ -14,23 +14,17 @@
 
 +(id)sharedManager;
 
-
+//CoreDataManager
 +(void)saveCurrencyWithName:(NSString*)name rate:(float)rate;
 +(void)changeCheckCurrencyWithName:(NSString*)name;
 +(NSArray*)loadAllCurrencies;
 +(Currency*)getCurrencyWithName:(NSString*)name;
 +(NSArray*)getCurrenciesWithCheckedStatus:(BOOL)checkedStatus;
 
+//InternetReachability
 -(BOOL)getInternetStatus;
-
-
 
 //XMLParser
 +(void)updateConvertRates;
-
-////Save
-//+(void)saveConvertRates:(NSArray*)arrayOfCurrencies;
-//+(NSArray*)getConvertRates;
-
 
 @end

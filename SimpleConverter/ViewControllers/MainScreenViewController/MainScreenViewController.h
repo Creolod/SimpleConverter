@@ -11,5 +11,6 @@
 @interface MainScreenViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *tableViewBottomConstraint;
+@property (weak, nonatomic) IBOutlet UIView *darkView;
 
 @end
