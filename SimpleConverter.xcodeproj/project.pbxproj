@@ -17,34 +17,15 @@
 		CE016ABB1D0A1CA000C613B5 /* SimpleConverter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE016AB91D0A1CA000C613B5 /* SimpleConverter.xcdatamodeld */; };
 		CE016AC61D0A1D3F00C613B5 /* Currency+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = CE016AC31D0A1D3F00C613B5 /* Currency+CoreDataProperties.m */; };
 		CE016AC71D0A1D3F00C613B5 /* Currency.m in Sources */ = {isa = PBXBuildFile; fileRef = CE016AC51D0A1D3F00C613B5 /* Currency.m */; };
+		CE0ADDB81D0EE5CF005265A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0ADDB71D0EE5CF005265A5 /* main.m */; };
 		CE5A4BC31D0A43FA0076C5DA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5A4BC21D0A43FA0076C5DA /* Reachability.m */; };
-		CE7442E51D07538D003C20CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7442E41D07538D003C20CC /* main.m */; };
 		CE7442E81D07538D003C20CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7442E71D07538D003C20CC /* AppDelegate.m */; };
 		CE7442EE1D07538D003C20CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7442EC1D07538D003C20CC /* Main.storyboard */; };
 		CE7442F31D07538D003C20CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7442F21D07538D003C20CC /* Assets.xcassets */; };
 		CE7442F61D07538D003C20CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7442F41D07538D003C20CC /* LaunchScreen.storyboard */; };
-		CE7443011D07538D003C20CC /* SimpleConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7443001D07538D003C20CC /* SimpleConverterTests.m */; };
-		CE74430C1D07538D003C20CC /* SimpleConverterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE74430B1D07538D003C20CC /* SimpleConverterUITests.m */; };
 		CE7443251D075FE1003C20CC /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7443241D075FE1003C20CC /* XMLParser.m */; };
 		CE74437D1D07823F003C20CC /* Facade.m in Sources */ = {isa = PBXBuildFile; fileRef = CE74437C1D07823F003C20CC /* Facade.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CE7442FD1D07538D003C20CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE7442D81D07538D003C20CC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE7442DF1D07538D003C20CC;
-			remoteInfo = SimpleConverter;
-		};
-		CE7443081D07538D003C20CC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE7442D81D07538D003C20CC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE7442DF1D07538D003C20CC;
-			remoteInfo = SimpleConverter;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8505A79A1D0AEE14003A6886 /* CustomTextFieldForCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTextFieldForCell.h; path = Models/MainScreenTableViewCell/CustomTextFieldForCell.h; sourceTree = "<group>"; };
@@ -68,22 +49,16 @@
 		CE016AC31D0A1D3F00C613B5 /* Currency+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Currency+CoreDataProperties.m"; path = "SimpleConverter/Models/CoreDataClasses/Currency+CoreDataProperties.m"; sourceTree = "<group>"; };
 		CE016AC41D0A1D3F00C613B5 /* Currency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Currency.h; path = SimpleConverter/Models/CoreDataClasses/Currency.h; sourceTree = "<group>"; };
 		CE016AC51D0A1D3F00C613B5 /* Currency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Currency.m; path = SimpleConverter/Models/CoreDataClasses/Currency.m; sourceTree = "<group>"; };
+		CE0ADDB71D0EE5CF005265A5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Recources/main.m; sourceTree = "<group>"; };
 		CE5A4BC11D0A43FA0076C5DA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Models/Reachability/Reachability.h; sourceTree = "<group>"; };
 		CE5A4BC21D0A43FA0076C5DA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Models/Reachability/Reachability.m; sourceTree = "<group>"; };
 		CE7442E01D07538D003C20CC /* SimpleConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE7442E41D07538D003C20CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE7442E61D07538D003C20CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CE7442E71D07538D003C20CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE7442E61D07538D003C20CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Recources/AppDelegate.h; sourceTree = "<group>"; };
+		CE7442E71D07538D003C20CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Recources/AppDelegate.m; sourceTree = "<group>"; };
 		CE7442ED1D07538D003C20CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE7442F21D07538D003C20CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE7442F21D07538D003C20CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Recources/Assets.xcassets; sourceTree = "<group>"; };
 		CE7442F51D07538D003C20CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CE7442F71D07538D003C20CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE7442FC1D07538D003C20CC /* SimpleConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE7443001D07538D003C20CC /* SimpleConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleConverterTests.m; sourceTree = "<group>"; };
-		CE7443021D07538D003C20CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE7443071D07538D003C20CC /* SimpleConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE74430B1D07538D003C20CC /* SimpleConverterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleConverterUITests.m; sourceTree = "<group>"; };
-		CE74430D1D07538E003C20CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE7442F71D07538D003C20CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Recources/Info.plist; sourceTree = "<group>"; };
 		CE7443231D075FE1003C20CC /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParser.h; path = Models/XMLParser/XMLParser.h; sourceTree = "<group>"; };
 		CE7443241D075FE1003C20CC /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParser.m; path = Models/XMLParser/XMLParser.m; sourceTree = "<group>"; };
 		CE74437B1D07823F003C20CC /* Facade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Facade.h; path = Models/Facade/Facade.h; sourceTree = "<group>"; };
@@ -92,20 +67,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		CE7442DD1D07538D003C20CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE7442F91D07538D003C20CC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE7443041D07538D003C20CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -220,8 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				CE7442E21D07538D003C20CC /* SimpleConverter */,
-				CE7442FF1D07538D003C20CC /* SimpleConverterTests */,
-				CE74430A1D07538D003C20CC /* SimpleConverterUITests */,
 				CE7442E11D07538D003C20CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -230,8 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				CE7442E01D07538D003C20CC /* SimpleConverter.app */,
-				CE7442FC1D07538D003C20CC /* SimpleConverterTests.xctest */,
-				CE7443071D07538D003C20CC /* SimpleConverterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -250,27 +207,9 @@
 		CE7442E31D07538D003C20CC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE7442E41D07538D003C20CC /* main.m */,
+				CE0ADDB71D0EE5CF005265A5 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CE7442FF1D07538D003C20CC /* SimpleConverterTests */ = {
-			isa = PBXGroup;
-			children = (
-				CE7443001D07538D003C20CC /* SimpleConverterTests.m */,
-				CE7443021D07538D003C20CC /* Info.plist */,
-			);
-			path = SimpleConverterTests;
-			sourceTree = "<group>";
-		};
-		CE74430A1D07538D003C20CC /* SimpleConverterUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CE74430B1D07538D003C20CC /* SimpleConverterUITests.m */,
-				CE74430D1D07538E003C20CC /* Info.plist */,
-			);
-			path = SimpleConverterUITests;
 			sourceTree = "<group>";
 		};
 		CE7443261D075FE7003C20CC /* Models */ = {
@@ -315,42 +254,6 @@
 			productReference = CE7442E01D07538D003C20CC /* SimpleConverter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CE7442FB1D07538D003C20CC /* SimpleConverterTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE7443131D07538E003C20CC /* Build configuration list for PBXNativeTarget "SimpleConverterTests" */;
-			buildPhases = (
-				CE7442F81D07538D003C20CC /* Sources */,
-				CE7442F91D07538D003C20CC /* Frameworks */,
-				CE7442FA1D07538D003C20CC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE7442FE1D07538D003C20CC /* PBXTargetDependency */,
-			);
-			name = SimpleConverterTests;
-			productName = SimpleConverterTests;
-			productReference = CE7442FC1D07538D003C20CC /* SimpleConverterTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CE7443061D07538D003C20CC /* SimpleConverterUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE7443161D07538E003C20CC /* Build configuration list for PBXNativeTarget "SimpleConverterUITests" */;
-			buildPhases = (
-				CE7443031D07538D003C20CC /* Sources */,
-				CE7443041D07538D003C20CC /* Frameworks */,
-				CE7443051D07538D003C20CC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE7443091D07538D003C20CC /* PBXTargetDependency */,
-			);
-			name = SimpleConverterUITests;
-			productName = SimpleConverterUITests;
-			productReference = CE7443071D07538D003C20CC /* SimpleConverterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -363,14 +266,6 @@
 					CE7442DF1D07538D003C20CC = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = RDY8LLF99L;
-					};
-					CE7442FB1D07538D003C20CC = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = CE7442DF1D07538D003C20CC;
-					};
-					CE7443061D07538D003C20CC = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = CE7442DF1D07538D003C20CC;
 					};
 				};
 			};
@@ -389,8 +284,6 @@
 			projectRoot = "";
 			targets = (
 				CE7442DF1D07538D003C20CC /* SimpleConverter */,
-				CE7442FB1D07538D003C20CC /* SimpleConverterTests */,
-				CE7443061D07538D003C20CC /* SimpleConverterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -408,20 +301,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE7442FA1D07538D003C20CC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE7443051D07538D003C20CC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -429,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0ADDB81D0EE5CF005265A5 /* main.m in Sources */,
 				CE016AA51D0A170700C613B5 /* AddNewCurrenciesViewController.m in Sources */,
 				CE7442E81D07538D003C20CC /* AppDelegate.m in Sources */,
 				CE016ABB1D0A1CA000C613B5 /* SimpleConverter.xcdatamodeld in Sources */,
@@ -436,7 +316,6 @@
 				CE016A951D09E5F600C613B5 /* CoreDataManager.m in Sources */,
 				CE016AC61D0A1D3F00C613B5 /* Currency+CoreDataProperties.m in Sources */,
 				8505A79C1D0AEE14003A6886 /* CustomTextFieldForCell.m in Sources */,
-				CE7442E51D07538D003C20CC /* main.m in Sources */,
 				CE016A7E1D08791300C613B5 /* MainScreenViewController.m in Sources */,
 				CE016A831D087A1600C613B5 /* MainScreenTableViewCell.m in Sources */,
 				CE74437D1D07823F003C20CC /* Facade.m in Sources */,
@@ -445,36 +324,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE7442F81D07538D003C20CC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE7443011D07538D003C20CC /* SimpleConverterTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE7443031D07538D003C20CC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE74430C1D07538D003C20CC /* SimpleConverterUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CE7442FE1D07538D003C20CC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE7442DF1D07538D003C20CC /* SimpleConverter */;
-			targetProxy = CE7442FD1D07538D003C20CC /* PBXContainerItemProxy */;
-		};
-		CE7443091D07538D003C20CC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE7442DF1D07538D003C20CC /* SimpleConverter */;
-			targetProxy = CE7443081D07538D003C20CC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		85072E781D0AC2B1004D2C9C /* Localizable.strings */ = {
@@ -484,7 +334,7 @@
 				85072E791D0AC2BD004D2C9C /* ru */,
 			);
 			name = Localizable.strings;
-			path = Recources;
+			path = Recources/LocalizableStrings;
 			sourceTree = "<group>";
 		};
 		CE7442EC1D07538D003C20CC /* Main.storyboard */ = {
@@ -495,6 +345,7 @@
 				85072E7B1D0ACB2A004D2C9C /* en */,
 			);
 			name = Main.storyboard;
+			path = Recources/Storyboards;
 			sourceTree = "<group>";
 		};
 		CE7442F41D07538D003C20CC /* LaunchScreen.storyboard */ = {
@@ -504,6 +355,7 @@
 				85072E731D0ABA94004D2C9C /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			path = Recources/Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -596,7 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = SimpleConverter/Info.plist;
+				INFOPLIST_FILE = SimpleConverter/Recources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OS.SimpleConverter;
@@ -610,60 +462,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = SimpleConverter/Info.plist;
+				INFOPLIST_FILE = SimpleConverter/Recources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = OS.SimpleConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		CE7443141D07538E003C20CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SimpleConverterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = OS.SimpleConverterTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleConverter.app/SimpleConverter";
-			};
-			name = Debug;
-		};
-		CE7443151D07538E003C20CC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SimpleConverterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = OS.SimpleConverterTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleConverter.app/SimpleConverter";
-			};
-			name = Release;
-		};
-		CE7443171D07538E003C20CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SimpleConverterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = OS.SimpleConverterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SimpleConverter;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		CE7443181D07538E003C20CC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SimpleConverterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = OS.SimpleConverterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = SimpleConverter;
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -684,24 +488,6 @@
 			buildConfigurations = (
 				CE7443111D07538E003C20CC /* Debug */,
 				CE7443121D07538E003C20CC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE7443131D07538E003C20CC /* Build configuration list for PBXNativeTarget "SimpleConverterTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE7443141D07538E003C20CC /* Debug */,
-				CE7443151D07538E003C20CC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE7443161D07538E003C20CC /* Build configuration list for PBXNativeTarget "SimpleConverterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE7443171D07538E003C20CC /* Debug */,
-				CE7443181D07538E003C20CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -18,9 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [Facade updateConvertRates];
     [Facade sharedManager];
-    
+    [Facade updateConvertRates];
     return YES;
 }
 

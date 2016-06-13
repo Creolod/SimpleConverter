@@ -13,9 +13,10 @@
 
 @interface MainScreenViewController (){
     NSArray * convertRates;
-    float sum;
+    double sum;
     UIToolbar* numberToolbar;
     UITextField * currentTF;
+    UIRefreshControl * refreshControl;
 }
 
 @end
@@ -25,43 +26,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     sum = 0;
-    [self.navigationController.view setBackgroundColor:[UIColor colorWithRed:76.0/255.0 green:217.0/255.0 blue:100.0/255.0 alpha:1]];
-    
-    UIWindow* currentWindow = [UIApplication sharedApplication].keyWindow;
-    [currentWindow addSubview:self.darkView];
-    [currentWindow bringSubviewToFront:self.darkView];
-    [self.navigationController.view addSubview:self.darkView];
     [self addObservers];
-    [self addRefreshControl];
+    [self initRefreshControl];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:NO];
     convertRates = [Facade getCurrenciesWithCheckedStatus:YES];
     [self.tableView reloadData];
+    if (refreshControl.isRefreshing) {
+        CGPoint offset = self.tableView.contentOffset;
+        [refreshControl endRefreshing];
+        [refreshControl beginRefreshing];
+        self.tableView.contentOffset = offset;
+    }
 }
 
--(NSString*)getFormatedStringFromNumber:(float)number{
+-(NSString*)getFormatedStringFromNumber:(double)number{
     NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
     [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
     [numberFormatter setMaximumFractionDigits:2];
     [numberFormatter setDecimalSeparator:@"."];
     [numberFormatter setGroupingSeparator:@""];
-    return [numberFormatter stringFromNumber:[NSNumber numberWithFloat:number]];
+    return [numberFormatter stringFromNumber:[NSNumber numberWithDouble:number]];
 }
 
 #pragma mark - "Pull To Refresh" Mehods
 
--(void)addRefreshControl{
-    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
-    [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+-(void)initRefreshControl{
+    refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
     refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Update rates..."];
     [self.tableView addSubview:refreshControl];
 }
 
-- (void)refresh:(UIRefreshControl *)refreshControl {
+- (void)refresh{
     [self.tableView reloadData];
     if (![[Facade sharedManager]getInternetStatus]) {
+        [refreshControl endRefreshing];
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Can't load rates" message:@"Check your internet connection" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *okAction = [UIAlertAction
                                    actionWithTitle:@"OK"
@@ -70,9 +72,15 @@
                                    }];
         [alert addAction:okAction];
         [self presentViewController:alert animated:YES completion:nil];
-    } else
-        [Facade updateConvertRates];
-    [refreshControl endRefreshing];
+    } else{
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+            [Facade updateConvertRates];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                convertRates = [Facade getCurrenciesWithCheckedStatus:YES];
+                [refreshControl endRefreshing];
+            });
+        });
+    }
 }
 
 #pragma mark - Keyboard Show/Hide Methods
@@ -126,7 +134,7 @@
     [cell.sumTextField addTarget:self action:@selector(sumTextFieldEndAction:) forControlEvents:UIControlEventEditingDidEnd];
     cell.sumTextField.tag = indexPath.row;
     
-    cell.sumTextField.text = [self getFormatedStringFromNumber:sum * currency.rate.floatValue];
+    cell.sumTextField.text = [self getFormatedStringFromNumber: sum * currency.rate.floatValue];
     return cell;
 }
 
@@ -154,7 +162,7 @@
             sumTextField.text = [sumTextField.text substringFromIndex:1];
         }
         if (sumTextField.text.floatValue>0) {
-            sum = sumTextField.text.floatValue / currency.rate.floatValue;
+            sum = sumTextField.text.doubleValue / currency.rate.floatValue;
             for (int i = 0; i<convertRates.count; i++){
                 if (i != sumTextField.tag)
                     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:i inSection:0]] withRowAnimation:UITableViewRowAnimationNone];
@@ -163,8 +171,6 @@
     } else {
         sumTextField.text = @"0";
     }
-    
-    
 }
 
 #pragma mark - Delete Currency Method
